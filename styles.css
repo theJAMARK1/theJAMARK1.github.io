@@ -43,6 +43,7 @@ nav ul {
 
 /* Main content */
 main {
+    background-color: #fff;
   max-width: 800px;
   margin: 0 auto;
 }
