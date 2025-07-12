@@ -7,9 +7,29 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'eigerdals-heavy';
+    src: url('fonts/eigerdals_heavy-webfont.woff2') format('woff2'),
+        url('fonts/eigerdals_heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    /* makes text visible while loading */
+}
+
+@font-face {
+    font-family: 'eigerdals-regular';
+    src: url('fonts/eigerdals-webfont.woff2') format('woff2'),
+        url('fonts/eigerdals-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    /* makes text visible while loading */
+}
+
 /* Base typography & layout */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif, Verdana, Arial;
     line-height: 1.6;
     color: #333;
     background-color: #f9f9f9;
@@ -27,6 +47,7 @@ a:hover {
 
 /* Header */
 header {
+    font-family: 'eigerdals-heavy';
     background-color: #fff;
     border-bottom: 1px solid #ddd;
     padding: 1rem 0;
@@ -59,4 +80,14 @@ footer {
     font-size: 0.9rem;
     color: #666;
     border-top: 1px solid #ddd;
+}
+
+/* Makes all Bootstrap Icons more customizable alongside text.
+Find some icons here: https://icons.getbootstrap.com/
+*/
+.bi {
+    vertical-align: text-top;
+    width: 1em;
+    height: 1em;
+    color: inherit !important;
 }
